@@ -35,8 +35,16 @@ function Nav() {
         </NavLink>
 
       </h4>
+      <ul id="list">
+     
+      <li ><a className="hoverable" href="#container">About</a></li>
+      <li className="hoverable"><a className="hoverable"  href="#projects">Projects</a></li>
+      <li className="hoverable"><a className="hoverable"  href="#contact">Contact</a></li>
+    
+      </ul>
 
       <ul id="nav-list">
+      <NavLink id="contact-button" to="/form">Contact Me!</NavLink>
         <Dropdown title="Dropdown button">
           <Dropdown.Toggle style={{ color: "white" }}
             variant="" id="dropdown-basic">
@@ -48,6 +56,8 @@ function Nav() {
             <Dropdown.Item href="#projects">Projects</Dropdown.Item>
            <Dropdown.Item target="_blank" href={resume}>Resume </Dropdown.Item>
             <Dropdown.Item href="#contact">Contact</Dropdown.Item>
+            <Dropdown.Item href="/form">Send me a message!</Dropdown.Item>
+
 
      
 

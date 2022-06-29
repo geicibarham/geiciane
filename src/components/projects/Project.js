@@ -64,7 +64,7 @@ function Projects() {
                         sx={{ display: 'flex', justifyContent: 'center' }} key={project.title}>
                         <Grow in={true} style={{ transformOrigin: '0 0 0' }}
                             {...(true ? { timeout: project.timeout } : {})}>
-                            <Card sx={{
+                            <Card id="card"sx={{
                                 maxWidth: 345,
                                 backgroundColor: '#F1F2F6', mb: 2,
                                 display: 'flex', flexDirection: 'column'
@@ -92,8 +92,8 @@ function Projects() {
                                     </Typography>
                                 </CardContent>
                                 <CardActions sx={{ mt: 'auto' }}>
-                                    <Button href={project.deployed} size="small" target="_blank" rel='noreferrer'>Deployed App</Button>
-                                    <Button href={project.repo} size="small" target="_blank" rel='noreferrer'>Github</Button>
+                                    <Button className="site" href={project.deployed} size="small" target="_blank" rel='noreferrer'>Deployed App</Button>
+                                    <Button className="site" href={project.repo} size="small" target="_blank" rel='noreferrer'>Github</Button>
                                 </CardActions>
                             </Card>
                         </Grow>
