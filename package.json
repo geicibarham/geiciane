@@ -1,6 +1,6 @@
 {
   "name": "geici",
-  "homepage": "https://geicibarham.github.io/geiciane",
+ "homepage": "http://geicibarham.github.io/geiciane",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,7 +14,6 @@
     "autoprefixer": "10.4.5",
     "bootstrap": "^5.1.3",
     "formik": "^2.2.9",
-    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.2.0",
@@ -48,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
