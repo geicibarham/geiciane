@@ -16,7 +16,7 @@ function App() {
       <Routes>
 
       <Route
-            path='/'
+            path='/geiciane'
             element={<Home />}
           />
       <Route
