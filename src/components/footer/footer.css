@@ -1,0 +1,25 @@
+footer {
+    color:white;
+    display: flex;
+ 
+  
+    justify-content: center;
+    background-position: 80%;
+    align-content: center;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    padding: 100px;
+    bottom: 0;
+  background-color: #35013f;
+
+    
+  }
+  
+  .github {
+    height: 30px;
+    margin-right: 13px;
+  }
+  
+  footer a {
+    text-decoration: none;
+  }

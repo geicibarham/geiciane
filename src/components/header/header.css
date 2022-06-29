@@ -1,0 +1,29 @@
+
+.text{
+    color:white;
+    display: inline;
+    align-self: center;
+}
+
+#geici {
+    height: 400px;
+    filter: brightness(120%);
+    filter: contrast(120%);
+    filter: drop-shadow(10px 0px 10px rgb(15, 15, 15));
+}
+
+#hero {
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: nowrap; */
+    /* justify-content: end; */
+    /* background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%); */
+    background-color: #34c3a1;
+    background-color: #ffb61f;
+    background-color: #42b883;
+   background-color: #1abb9c;
+
+
+   
+    
+}

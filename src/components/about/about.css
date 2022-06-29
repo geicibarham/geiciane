@@ -1,0 +1,49 @@
+#container {
+    display: flex;
+    padding: 30px;
+    background-color: #fbdce1;
+    color: white;
+}
+
+.cursor {
+    display: none;
+}
+
+#tech {
+    /* width: auto; */
+    margin-right: 20px;
+    border-radius: 30px;
+    height: 60vh;
+    max-width: 40%;
+    align-self: center;
+}
+
+body {
+    background-color: #fbdce1;
+}
+
+#check{
+    height: 20px;
+}
+
+#technology-list{
+    list-style: none;
+    color:rgb(47, 40, 108) !important;
+}
+
+@media screen and (max-width: 768px) {
+
+  #tech {
+height: 20vh;
+  }
+
+  #container{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: fit-content;
+    font-size: smaller;
+  }
+  
+   }
+  
