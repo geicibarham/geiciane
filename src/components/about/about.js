@@ -64,24 +64,24 @@ const About = () => {
                     <ul id="technology-list">
                         <li style={{color:"rgb(47, 40, 108)"}}>
                              <img id="check"
-                            src={check} alt="" /> React, Handlebars
+                            src={check} alt="" /> React, Handlebars.
                         </li>
                         <li style={{color:"rgb(47, 40, 108)"}}>
                              <img id="check"
-                            src={check} alt="" />{''}HTML5, Javascript, CSS,Sass, Bootstrap 
+                            src={check} alt="" />HTML5, Javascript, CSS,Sass, Bootstrap.
                         </li>
                         <li style={{color:"rgb(47, 40, 108)"}}>
                              <img id="check"
-                            src={check} alt="" /> {''}GraphQL,SQL,MySQL,Sequelize, MongoDB 
+                            src={check} alt=""/>GraphQL,SQL,MySQL,Sequelize, MongoDB.
                             </li>
                 
                             <li style={{color:"rgb(47, 40, 108)"}}>
                                  <img id="check"
-                            src={check} alt="" /> {''}Express, Node.js 
+                            src={check} alt="" />{''}Express, Node.js.
                             </li>
                             <li style={{color:"rgb(47, 40, 108)"}}>
                                  <img id="check"
-                            src={check} alt="" /> {''}
+                            src={check} alt="" />{''}
                             Git
                             </li>
                     </ul>
