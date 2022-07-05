@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import css from "./nav.css";
 
 import { NavLink } from "react-router-dom";
-import Dropdown from 'react-bootstrap/Dropdown';
-import resume from '../../geiciane-barham.pdf'
 import { useState } from "react";
 import DrawerNav from "./drawer";
 // geici\src\assets\geiciane-barham.pdf
@@ -19,7 +17,7 @@ function Nav() {
       setColorchange(false);
     }
   };
-
+  window.addEventListener('scroll', changeNavbarColor);
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
   </style>

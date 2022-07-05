@@ -4,6 +4,29 @@ import tech from '../../assets/images/tech.jpg'
 import check from '../../assets/images/check.png'
 import Typewriter from 'typewriter-effect';
 const About = () => {
+
+    const technologies = [
+        {
+            text: " React, Handlebars.",
+            id: '1'
+
+        },
+        {
+            text: "HTML5, Javascript, CSS,Sass, Bootstrap.",
+            id: '2'
+
+        },
+        {
+            text: " GraphQL,SQL,MySQL,Sequelize, MongoDB, Rest APIs.",
+            id: '3'
+
+        },
+        {
+            text: " Express, Node.js.",
+            id: '4'
+
+        }
+    ]
     return (
         <>
             <h2 style={{
@@ -62,33 +85,22 @@ const About = () => {
 
                     Some of the Technologies I have used are:
                     <ul id="technology-list">
-                        <li style={{color:"rgb(47, 40, 108)"}}>
-                             <img id="check"
-                            src={check} alt="" /> React, Handlebars.
-                        </li>
-                        <li style={{color:"rgb(47, 40, 108)"}}>
-                             <img id="check"
-                            src={check} alt="" />HTML5, Javascript, CSS,Sass, Bootstrap.
-                        </li>
-                        <li style={{color:"rgb(47, 40, 108)"}}>
-                             <img id="check"
-                            src={check} alt=""/>GraphQL,SQL,MySQL,Sequelize, MongoDB.
-                            </li>
-                
-                            <li style={{color:"rgb(47, 40, 108)"}}>
-                                 <img id="check"
-                            src={check} alt="" />{''}Express, Node.js.
-                            </li>
-                            <li style={{color:"rgb(47, 40, 108)"}}>
-                                 <img id="check"
-                            src={check} alt="" />{''}
-                            Git
-                            </li>
+
+                        {
+                            technologies.map(technology => (
+
+                                <li key={technology.id}
+                                style={{color: "rgb(47, 40, 108)"}}>
+                                    <img id="check"
+                                        src={check} alt="" />
+                                    {technology.text} </li>
+
+                            ))}
+
                     </ul>
                 </p>
             </section>
         </>
     )
 }
-
 export default About;
