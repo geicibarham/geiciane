@@ -2,7 +2,9 @@
 /* *{
     color:white !important;
 } */
-
+#card:hover{
+   border: solid 5px #2f286c;
+}
 #projects {
     background-color: #2f286c;
     background-color: #6e5773;

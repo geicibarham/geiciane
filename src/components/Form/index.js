@@ -5,6 +5,8 @@ import { validateEmail } from '../../utils/helpers';
 import css from './form.css'
 import Nav from '../nav/nav';
 import Footer from '../footer';
+import formImg from '../../assets/images/form-img.jpg'
+import { Placeholder } from 'react-bootstrap';
 function ContactForm() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
@@ -38,40 +40,62 @@ function ContactForm() {
 
   return (
     <>
-    < Nav />
-    <section id="form-page">
-      <div className="myForm">
+      {/* < Nav /> */}
+      <section id="outer">
 
-        <form id="form" className="form-style">
-          <div>
-            <label htmlFor="name">Name:</label>
-            <input className="form-input" type="text" name="name" defaultValue={name} onBlur={handleChange} />
+
+        <div id="form-page">
+          <div className="myForm">
+            <section id="white-back">
+              <h5 style={{
+                textAlign: "center",
+                fontWeight:"bold",
+                color:"#512b73",
+                marginTop:"10px"
+              }}>Let's Talk!</h5>
+              <form id="form" className="form-style">
+                <img style={{ width: "300px", alignSelf:"start" }}
+                 src={formImg} alt="girl sitting with laptop" />
+                <div className='input-form'>
+                  <div>
+                    {/* <label htmlFor="name">Name:</label> */}
+                    
+                    <input placeholder="NAME"className="form-input" type="text" 
+                    
+                  name="name"   defaultValue={name} onBlur={handleChange} />
+                 
+                  </div>
+                  <span class="dot"></span> 
+                  <div>
+                    {/* <label htmlFor="email">Email address:</label> */}
+                    <input placeholder="EMAIL"className="form-input" type="email"
+                    name="email" defaultValue={email} onBlur={handleChange} />
+                  </div>
+
+
+                  <div>
+                    {/* <label htmlFor="message">Message:</label> */}
+                   
+                    <textarea  placeholder="MESSAGE"className="form-input" name="message" rows="5"
+                     defaultValue={message} onBlur={handleChange} />
+                  </div>
+                  {errorMessage && (
+                    <div>
+                      <p className="error-text">{errorMessage}</p>
+                    </div>
+                  )}
+                  <div className="submit">
+                    <button id="btn-submit" className="btn btn-light form-button"
+                     data-testid="button" type="submit">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </section>
           </div>
-
-          <div>
-            <label htmlFor="email">Email address:</label>
-            <input className="form-input" type="email" name="email" defaultValue={email} onBlur={handleChange} />
-          </div>
-
-
-          <div>
-            <label htmlFor="message">Message:</label>
-            <textarea className="form-input" name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-          </div>
-          {errorMessage && (
-            <div>
-              <p className="error-text">{errorMessage}</p>
-            </div>
-          )}
-          <div className="submit">
-            <button id="btn-submit" className="btn btn-light" data-testid="button" type="submit">Submit</button>
-          </div>
-        </form>
-
-      </div>
+        </div>
       </section>
       <Footer />
-      </>
+    </>
   );
 }
 

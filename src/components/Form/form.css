@@ -1,28 +1,56 @@
 .myForm {
+
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-family: "ElMessiri-SemiBold";
+  
 }
+
 #form-page{
-  background: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a18cd1));
+ background-image: url('../../assets/images/purple.jpg');
+
+}
+.form-button {
+  float: right;
+  background-color: #512b73!important;
+  color:white !important;
 }
 .form-style {
+  display: flex;
+  flex-wrap: nowrap;
   margin: auto;
-  width: 50%;
+  width: fit-content;
   border: 3px solid var(--secondary-color);
   background-color: #35013f;
+  background-color: #fff;
   padding: 20px;
   margin: 3.5%;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  color: white;
-  border: solid 1px black;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  color: black;
+  /* border: solid 1px black; */
 
 }
 
+#white-back{
+  background-color: #fff;
+  margin-top:20px;
+  margin-bottom:40px;
+  width: fit-content;
+}
+.input-form{
+ display: flex;
+ flex-direction: column;
+}
+
+.form-input::placeholder{
+font-size: 10px;
+}
 .form-input {
-  background-color: white;
+  background-color: #f7f7f7;
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
   display: block;
@@ -31,10 +59,11 @@
   width: 100%;
   margin-bottom: 15px;
   color: black;
+  align-items: center;
 }
 
 .form-input:focus {
-  background-color: rgba(255, 255, 255, 1);
+  
   outline: none;
 }
 
