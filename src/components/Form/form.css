@@ -33,6 +33,7 @@ ul {
   padding-right: 15px; }
 
 form {
+
   width: 50%;
   padding-top: 77px;
   padding-right: 60px;
@@ -68,11 +69,6 @@ form {
       background-color: salmon;
       color: white;
     }
-
-    .test{
-      background-color: pink;
-    }
-
 .form-control {
   display: block;
   width: 100%;
