@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/geiciane/static/css/main.922c81a3.css",
-    "main.js": "/geiciane/static/js/main.73123995.js",
-    "static/js/787.191b689a.chunk.js": "/geiciane/static/js/787.191b689a.chunk.js",
-    "static/media/4.png": "/geiciane/static/media/4.856ee092d1ebd4462425.png",
-    "static/media/0.png": "/geiciane/static/media/0.42c72aa86ad669a87846.png",
-    "static/media/purple.jpg": "/geiciane/static/media/purple.86d7de255439dde3cd91.jpg",
-    "static/media/2.png": "/geiciane/static/media/2.2843f47ed09fb9685fef.png",
-    "static/media/1.png": "/geiciane/static/media/1.69c7f988beddf4818efd.png",
-    "static/media/geici.png": "/geiciane/static/media/geici.4206da0b6a4ea32d7131.png",
-    "static/media/tech.jpg": "/geiciane/static/media/tech.50b318c5a70b300ca320.jpg",
-    "static/media/form-img.jpg": "/geiciane/static/media/form-img.4def7b800d9178e3c6d3.jpg",
-    "static/media/geiciane-barham.pdf": "/geiciane/static/media/geiciane-barham.65837599f7a254a876cb.pdf",
-    "static/media/3.png": "/geiciane/static/media/3.b9c60b0a53033dffd302.png",
-    "static/media/5.png": "/geiciane/static/media/5.f9efb4cf07a7dc8a900d.png",
-    "index.html": "/geiciane/index.html",
-    "main.922c81a3.css.map": "/geiciane/static/css/main.922c81a3.css.map",
-    "main.73123995.js.map": "/geiciane/static/js/main.73123995.js.map",
-    "787.191b689a.chunk.js.map": "/geiciane/static/js/787.191b689a.chunk.js.map"
+    "main.css": "/static/css/main.e5c7dfb4.css",
+    "main.js": "/static/js/main.3e284b84.js",
+    "static/js/787.191b689a.chunk.js": "/static/js/787.191b689a.chunk.js",
+    "static/media/4.png": "/static/media/4.856ee092d1ebd4462425.png",
+    "static/media/0.png": "/static/media/0.42c72aa86ad669a87846.png",
+    "static/media/purple.jpg": "/static/media/purple.86d7de255439dde3cd91.jpg",
+    "static/media/2.png": "/static/media/2.2843f47ed09fb9685fef.png",
+    "static/media/1.png": "/static/media/1.69c7f988beddf4818efd.png",
+    "static/media/geici.png": "/static/media/geici.4206da0b6a4ea32d7131.png",
+    "static/media/tech.jpg": "/static/media/tech.50b318c5a70b300ca320.jpg",
+    "static/media/form-img.jpg": "/static/media/form-img.4def7b800d9178e3c6d3.jpg",
+    "static/media/geiciane-barham.pdf": "/static/media/geiciane-barham.65837599f7a254a876cb.pdf",
+    "static/media/3.png": "/static/media/3.b9c60b0a53033dffd302.png",
+    "static/media/5.png": "/static/media/5.f9efb4cf07a7dc8a900d.png",
+    "index.html": "/index.html",
+    "main.e5c7dfb4.css.map": "/static/css/main.e5c7dfb4.css.map",
+    "main.3e284b84.js.map": "/static/js/main.3e284b84.js.map",
+    "787.191b689a.chunk.js.map": "/static/js/787.191b689a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.922c81a3.css",
-    "static/js/main.73123995.js"
+    "static/css/main.e5c7dfb4.css",
+    "static/js/main.3e284b84.js"
   ]
 }
