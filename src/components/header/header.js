@@ -10,7 +10,7 @@ const Header = () => {
                 
             <h1 class="animate__animated animate__fadeInDown">
                 Geiciane Barham</h1> < br /> 
-            <h2 style={{fontWeight:"lighter"}}
+            <h2 id="profession"style={{fontWeight:"lighter"}}
             >Full Stack Web Developer</h2>
             </div>
             

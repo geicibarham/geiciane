@@ -22,8 +22,19 @@
     background-color: #ffb61f;
     background-color: #42b883;
    background-color: #1abb9c;
+}
 
-
+@media screen and (max-width: 980px) {
    
-    
+ .text{
+  font-size: smaller;
+  margin-left: 13px;
+ }
+  
+ #profession{
+    font-size: 17px;
+ }
+    @media screen and (max-width: 775px) {
+  
+}
 }
