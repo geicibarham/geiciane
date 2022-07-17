@@ -11,6 +11,7 @@ import {
 import { Link } from 'react-router-dom'
 import css from './nav.css'
 import resume from '../../geiciane-barham.pdf'
+import menu from '../../assets/images/menu.png'
 
 export default function DrawerNav() {
     const [state, setState] = useState({
@@ -54,7 +55,10 @@ export default function DrawerNav() {
             {['right'].map((anchor) => (
                 <Fragment key={anchor}>
                     <Button onClick={toggleDrawer(anchor, true)}>
-                        <p className="">menu</p></Button>
+                       
+                        
+                            <img id="button__icon"src = {menu} />
+                        </Button>
                     <Drawer
                         anchor={anchor}
                         open={state[anchor]}

@@ -15,9 +15,17 @@
   top: 0;
   z-index: 999;
   height: 10% !important;
+  padding: 12px;
 
 }
 
+#button__icon{
+  height: 20px;
+  align-self: center !important;
+  color: white !important;
+  align-self: baseline !important;
+ 
+ }
 /*  */
 #menu p {
   margin-right: 10px;
@@ -64,7 +72,7 @@
   border-radius: 30px;
   padding: 8px;
   margin-right: 10px;
-  height:fit-content;
+  height: fit-content;
   background-color: orange;
 }
 
@@ -94,7 +102,7 @@ header nav {
 
 
 #nav-list {
-/* align-items: center; */
+  /* align-items: center; */
 
   list-style: none;
   display: flex;
@@ -102,7 +110,7 @@ header nav {
 
 #title {
   font-weight: lighter;
-  align-self:flex-start;
+  align-self: flex-start;
   margin-left: 10px;
   font-family: 'Pinyon Script', cursive;
 
@@ -141,21 +149,17 @@ li:hover {
 
   @media screen and (max-width: 775px) {
     #contact-button {
-      display: none;
-    }
-
-    #list {
-      display: none;
+      font-size: small !important;
+      width: fit-content !important;
     }
 
     #main-nav {
-      height: 50%;
+      
       display: flex;
-
-      flex-direction: column;
-      /* justify-content: flex-start; */
       align-items: flex-start;
+      flex-wrap: nowrap !important;
       font-size: 14px;
+      padding:12px;
 
     }
 
@@ -163,20 +167,9 @@ li:hover {
       font-size: 20px;
     }
 
-
-    #grains {
-
-      height: 20px;
-    }
-
     #title {
       font-size: 12px;
 
-    }
-
-    #logout {
-
-      font-size: 12px;
     }
 
     h3,

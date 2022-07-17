@@ -1,9 +1,7 @@
 
 
-import React, { useEffect,useState, useRef } from 'react';
-
-import { validateEmail } from '../../utils/helpers';
-import css from './form.css'
+import React, { useEffect, useState, useRef } from 'react';
+import './form.css'
 import Nav from '../nav/nav';
 import Footer from '../footer';
 import formImg from '../../assets/images/form-img.jpg'
@@ -19,25 +17,25 @@ function ContactForm() {
   const [icon, setIcon] = useState('')
 
 
-  function track () {
+  function track() {
     setIcon(coding)
     setMessage(<span>Thank you for contacting me. <br />I will reply as soon as possible!</span>)
-    
+
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-   
-    emailjs.sendForm('service_gi9f1ys', 
-    'template_zybg72b', form.current,
-     'tjWNs6WMdJZ0tz0Y5')
+
+    emailjs.sendForm('service_gi9f1ys',
+      'template_zybg72b', form.current,
+      'tjWNs6WMdJZ0tz0Y5')
       .then((result) => {
-          console.log(result.text);
-          
+        console.log(result.text);
+
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
       });
-      e.target.reset();
+    e.target.reset();
 
   };
 
@@ -53,15 +51,15 @@ function ContactForm() {
             <img src={formImg} alt="" />
           </div>
           <form ref={form}
-           onSubmit={handleSubmit} action="">
+            onSubmit={handleSubmit} action="">
             <h3 id="talk">Let's Talk!</h3>
 
-            <p  style={{color:"#52297c"}}>
-           
-              {message } <img height={"40px"} src= {icon} /></p>
+            <p style={{ color: "#52297c" }}>
 
-       
-              
+              {message} <img height={"40px"} src={icon} /></p>
+
+
+
             <div class="form-holder"
               className={isActive ? 'form-holder active' : 'form-holder'}
               onClick={handleClick}>
@@ -78,7 +76,7 @@ function ContactForm() {
             >
               <input type="email"
                 name="email"
-              
+
                 placeholder="e-mail"
                 // onChange={handleChange}
                 class="form-control" />
@@ -89,7 +87,7 @@ function ContactForm() {
 
               <input type="text"
                 name="message" placeholder="Message"
-             
+
                 // onChange={handleChange}
                 class="form-control" style={{
                   fontSize: "15px",
@@ -97,12 +95,12 @@ function ContactForm() {
                 }} />
             </div>
             <div className="submit">
-         
+
               <button onClick={track}
-              
-              
-              id="btn-submit" className="btn btn-light" data-testid="button" type="submit">Send</button>
-              
+
+
+                id="btn-submit" className="btn btn-light" data-testid="button" type="submit">Send</button>
+
             </div>
           </form>
         </div>
