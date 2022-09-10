@@ -34,7 +34,9 @@ body {
 @media screen and (max-width: 768px) {
 
   #tech {
-height: 20vh;
+height: 250px;
+flex:2;
+
   }
 
   #container{
