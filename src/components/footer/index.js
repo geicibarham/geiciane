@@ -12,13 +12,13 @@ return (
             </div>
             <div className="contact-img">
                 <a href="https://github.com/geicibarham">
-                    <img className="github" src={Git} alt="/" /> </a>
+                    <img className="github" src={Git} alt="check me out on Github!" /> </a>
 
                 <a href="mailto:geicianecosta43@gmail.com">
-                    <img className="github" src={Gmail} alt="/" />
+                    <img className="github" src={Gmail} alt="Send me an email" />
                 </a>
                 <a href="https://www.linkedin.com/in/geiciane-barham-43b4aa201/">
-                    <img className="github" src={Linkedin} alt="/" />
+                    <img className="github" src={Linkedin} alt="Check my Linkedin out!" />
                 </a>
             </div>
             <div className="name">

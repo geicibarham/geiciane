@@ -9,7 +9,9 @@ function Projects() {
             technologies: "React, MongoDB, Apollo Server, JSON Web Tokens,Heroku,GraphQl,React Bootstrap,Node.js,Apollo Client.",
             deployed: "https://salty-shelf-69418.herokuapp.com/",
             repo: "https://github.com/geicibarham/Coffee-Parenting",
-            timeout: 750
+            timeout: 750,
+            ariaDepoloyed:'Visit Coffee and Parenting Website',
+            ariaGithub: 'Visit Coffee and Parenting Code on Github'
         },
         {
             title: "Scout 🐶",
@@ -17,7 +19,9 @@ function Projects() {
             technologies: " Handlebars, Css, NodeJs, Sequelize, Express.js,UnidId,Heroku,mysql.",
             deployed: "https://sheltered-garden-88579.herokuapp.com/",
             repo: "https://github.com/bdswartz/walks-of-love",
-            timeout: 1000
+            timeout: 1000,
+            ariaDepoloyed:'Visit the Scout  Website',
+            ariaGithub: 'Visit Scout Code on Github'
         },
         {
             title: "Harry Potter Quiz 9¾ ",
@@ -25,7 +29,9 @@ function Projects() {
             technologies: "HTML5,Javascript, Css, Bootstrap.",
             deployed: "https://geicibarham.github.io/Harry-Potter-Quiz/",
             repo: "https://github.com/geicibarham/Harry-Potter-Quiz",
-            timeout: 1750
+            timeout: 1750,
+            ariaDepoloyed:'Visit the Harrry Potter Quiz Website',
+            ariaGithub: 'Visit the Harry Potter Quiz Code on Github'
         },
         {
             title: "Silly Quotes 🤪",
@@ -33,7 +39,9 @@ function Projects() {
             technologies: "HTML,Css, Javascript, Third Party APIs",
             deployed: "https://davidebcurtis.github.io/silly-quotes/",
             repo: "https://github.com/DavidebCurtis/silly-quotes",
-            timeout: 1500
+            timeout: 1500,
+            ariaDepoloyed:'Visit the Silly Quotes Website',
+            ariaGithub: 'Visit the Silly Quotes Code on Github'
         },
 
         {
@@ -42,7 +50,9 @@ function Projects() {
             technologies: "SQL, Inquirer, Chalk - Npm, and Console.Table.",
             deployed: "https://drive.google.com/file/d/1c2ib8BUolWgmfQ1GAxTq9jsGr6F2ojcq/view",
             repo: "https://github.com/geicibarham/Employee-Tracker",
-            timeout: 1250
+            timeout: 1250,
+            ariaDepoloyed:'Visit the SQL Employee tracker Video',
+            ariaGithub: 'Visit the SQL Employee tracker code on Github'
         },
         {
             title: "Social Network API 🛢️",
@@ -50,12 +60,14 @@ function Projects() {
             technologies: "Technologies: MongoDB, Mongoose, Insomnia",
             deployed: "https://drive.google.com/file/d/1I4mjY715Jo3-NLaQBd6ihvvip7dN0kDU/view",
             repo: "https://github.com/geicibarham/Social-Network-API",
-            timeout: 2000
+            timeout: 2000,
+            ariaDepoloyed:'Visit the Social Network API Video',
+            ariaGithub: 'Visit the Social Network API  code on Github'
         }
     ]);
     return (
         <section id="projects">
-            <h2 style={{ color: "white", textAlign: "center", paddingBottom:"20px" }}
+            <h2 style={{ color: "white", textAlign: "center", paddingBottom: "20px" }}
 
             >Projects</h2>
             <Grid container spacing={1}>
@@ -64,7 +76,7 @@ function Projects() {
                         sx={{ display: 'flex', justifyContent: 'center' }} key={project.title}>
                         <Grow in={true} style={{ transformOrigin: '0 0 0' }}
                             {...(true ? { timeout: project.timeout } : {})}>
-                            <Card id="card"sx={{
+                            <Card id="card" sx={{
                                 maxWidth: 345,
                                 backgroundColor: '#F1F2F6', mb: 2,
                                 display: 'flex', flexDirection: 'column'
@@ -92,8 +104,8 @@ function Projects() {
                                     </Typography>
                                 </CardContent>
                                 <CardActions sx={{ mt: 'auto' }}>
-                                    <Button className="site" href={project.deployed} size="small" target="_blank" rel='noreferrer'>Deployed App</Button>
-                                    <Button className="site" href={project.repo} size="small" target="_blank" rel='noreferrer'>Github</Button>
+                                    <Button className="site" aria-label={project.ariaDepoloyed} href={project.deployed} size="small" target="_blank" rel='noreferrer'>Deployed App</Button>
+                                    <Button aria-label={project.ariaGithub} className="site" href={project.repo} size="small" target="_blank" rel='noreferrer'>Github</Button>
                                 </CardActions>
                             </Card>
                         </Grow>

@@ -7,8 +7,8 @@ ul {
   margin-bottom: 0; }
 
 
-:focus {
-  outline: none; }
+/* :focus {
+  outline: none; } */
 
 .wrapper {
   min-height: 100vh;

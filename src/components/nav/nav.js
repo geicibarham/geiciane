@@ -1,11 +1,11 @@
 import react from "react";
 import { Link } from "react-router-dom";
 import css from "./nav.css";
-
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import DrawerNav from "./drawer";
-// geici\src\assets\geiciane-barham.pdf
+import resume from '../../geiciane-barham.pdf'
+
 function Nav() {
 
   const [colorChange, setColorchange] = useState(false);
@@ -28,16 +28,31 @@ function Nav() {
       <h4 id="title">
 
         <NavLink style={{ fontWeight: "lighter" }}
+          role="link"
+          tabIndex={'0'}
           id="geici-nav" className="titleBtnLink" to="/">
           Geiciane Barham
         </NavLink>
 
       </h4>
-     
+  
+      <ul className="desktop-nav">
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#projects">Contact</a>
+        </li>
+
+        <li ><a target="_blank" href={resume}>Resume</a></li>
+      </ul>
       <ul id="nav-list">
-      <NavLink id="contact-button" to="/form">Contact Me!</NavLink>
-      <a id="menu" href="#" data-target="mobile-nav"
-        className="sidenav-trigger hide-on-large-only"><DrawerNav /></a>
+        <button id="contact-button"><a href="/form">Contact Me!</a></button>
+        <a id="menu" href="#" data-target="mobile-nav"
+          className="sidenav-trigger hide-on-large-only"><DrawerNav /></a>
       </ul>
     </nav>
 

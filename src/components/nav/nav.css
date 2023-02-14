@@ -18,7 +18,15 @@
   padding: 12px;
 
 }
-
+.desktop-nav{
+  display: flex;
+}
+.desktop-nav li {
+  list-style: none;
+}
+.desktop-nav a {
+  text-decoration: none;
+}
 #button__icon{
   height: 20px;
   align-self: center !important;
@@ -36,7 +44,6 @@
 }
 
 #menu {
-
   right: 0 !important;
   align-self: baseline !important;
 }
@@ -102,8 +109,6 @@ header nav {
 
 
 #nav-list {
-  /* align-items: center; */
-
   list-style: none;
   display: flex;
 }
@@ -115,7 +120,11 @@ header nav {
   font-family: 'Pinyon Script', cursive;
 
 }
-
+a:focus{
+  outline: solid 3px lime;
+  border-radius: 8px;
+  padding:8px;
+}
 
 li {
   padding: 10px;
@@ -140,6 +149,12 @@ li:hover {
 
 }
 
+@media screen and (min-width: 1200px) {
+  #menu{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 980px) {
   #main-nav {
     position: relative;
@@ -148,6 +163,10 @@ li:hover {
   }
 
   @media screen and (max-width: 775px) {
+
+    .desktop-nav {
+      display: none;
+    }
     #contact-button {
       font-size: small !important;
       width: fit-content !important;
